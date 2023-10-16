@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Favorite Star Wars Projects</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Share your favorite Star Wars projects">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            color: yellow; 
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        table {
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/SWweb.png" width="500" height="300" alt="Star Wars Logo" title="Star Wars Logo">
+    <h1>Share Your Favorite Star Wars Projects</h1>
+
+    <form method="post" action="submit.php">
+        Name:<br />
+        <input type="text" id="name" name="name" placeholder="Enter your name" autofocus><br><br>
+
+        <h2>List of Star Wars Projects:</h2>
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Episode IV: A New Hope</td>
+                <td>1977</td>
+            </tr>
+            <tr>
+                <td>Episode V: The Empire Strikes Back</td>
+                <td>1980</td>
+            </tr>
+            <tr>
+                <td>Episode VI: Return of the Jedi</td>
+                <td>1983</td>
+            </tr>
+            <tr>
+                <td>Episode I: The Phantom Menace</td>
+                <td>1999</td>
+            </tr>
+            <tr>
+                <td>Episode II: Attack of the Clones</td>
+                <td>2002</td>
+            </tr>
+            <tr>
+                <td>Episode III: Revenge of the Sith</td>
+                <td>2005</td>
+            </tr>
+            <tr>
+                <td>Star Wars: The Clone Wars</td>
+                <td>2008-2020</td>
+            </tr>
+            <tr>
+                <td>Star Wars Rebels</td>
+                <td>2014-2018</td>
+            </tr>
+            <tr>
+                <td>Episode VII: The Force Awakens</td>
+                <td>2015</td>
+            </tr>
+            <tr>
+                <td>Rogue One: A Star Wars Story</td>
+                <td>2016</td>
+            </tr>
+            <tr>
+                <td>Episode VIII: The Last Jedi</td>
+                <td>2017</td>
+            </tr>
+            <tr>
+                <td>Solo: A Star Wars Story</td>
+                <td>2018</td>
+            </tr>
+            <tr>
+                <td>Episode IX: The Rise of Skywalker</td>
+                <td>2019</td>
+            </tr>
+            <tr>
+                <td>The Mandalorian</td>
+                <td>2019-present</td>
+            </tr>
+            <tr>
+                <td>Bad Batch</td>
+                <td>2021-</td>
+            </tr>
+            <tr>
+                <td>The Book of Boba Fett</td>
+                <td>2021-2022</td>
+            </tr>
+            <tr>
+                <td>Obi-Wan Kenobi</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>Andor</td>
+                <td>2022-present</td>
+            </tr>
+            <tr>
+                <td>Star Wars: Tales Of The Jedi</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>Ahsoka</td>
+                <td>2023-</td>
+            </tr>
+            <!-- Add more projects as needed -->
+        </table><br><br>
+
+        <h2>7 Favorite Star Wars Projects:</h2>
+        <input type="checkbox" name="favorite-projects" value="Episode IV: A New Hope">Episode IV: A New Hope<br />
+        <input type="checkbox" name="favorite-projects" value="Episode V: The Empire Strikes Back">Episode V: The Empire Strikes Back<br />
+        <input type="checkbox" name="favorite-projects" value="Episode VI: Return of the Jedi">Episode VI: Return of the Jedi<br />
+        <input type="checkbox" name="favorite-projects" value="Episode I: The Phantom Menace">Episode I: The Phantom Menace<br />
+        <input type="checkbox" name="favorite-projects" value="Episode II: Attack of the Clones">Episode II: Attack of the Clones<br />
+        <input type="checkbox" name="favorite-projects" value="Episode III: Revenge of the Sith">Episode III: Revenge of the Sith<br />
+        <input type="checkbox" name="favorite-projects" value="Star Wars: The Clone Wars">Star Wars: The Clone Wars<br />
+        <input type="checkbox" name="favorite-projects" value="Star Wars Rebels">Star Wars Rebels<br />
+        <input type="checkbox" name="favorite-projects" value="Episode VII: The Force Awakens">Episode VII: The Force Awakens<br />
+        <input type="checkbox" name="favorite-projects" value="Rogue One: A Star Wars Story">Rogue One: A Star Wars Story<br />
+        <input type="checkbox" name="favorite-projects" value="Episode VIII: The Last Jedi">Episode VIII: The Last Jedi<br />
+        <input type="checkbox" name="favorite-projects" value="Solo: A Star Wars Story">Solo: A Star Wars Story<br />
+        <input type="checkbox" name="favorite-projects" value="Episode IX: The Rise of Skywalker">Episode IX: The Rise of Skywalker<br />
+        <input type="checkbox" name="favorite-projects" value="The Mandalorian">The Mandalorian<br />
+        <input type="checkbox" name="favorite-projects" value="Bad Batch">Bad Batch<br />
+        <input type="checkbox" name="favorite-projects" value="The Book of Boba Fett">The Book of Boba Fett<br />
+        <input type="checkbox" name="favorite-projects" value="Obi-Wan Kenobi">Obi-Wan Kenobi<br />
+        <input type="checkbox" name="favorite-projects" value="Andor">Andor<br />
+        <input type="checkbox" name="favorite-projects" value="Star Wars: Tales Of The Jedi">Star Wars: Tales Of The Jedi<br />
+        <input type="checkbox" name="favorite-projects" value="Ahsoka">Ahsoka<br /><br>
+
+        Comments:<br />
+        <textarea name="Explain your ranking" id="explain your ranking" rows="19" cols="77">Explanation</textarea><br><br>
+
+        <p>Are you ready to share your favorite projects?</p>
+        <input type="radio" name="ready-to-share" value="yes" id="yes" />
+        <label for="yes">Yes</label>
+        <input type="radio" name="ready-to-share" value="no" id="no" />
+        <label for="no">No</label><br><br>
+        <input type="submit" name="submit" value="Share" />
+    </form>
+</body>
+</html>
