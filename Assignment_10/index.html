@@ -17,112 +17,86 @@
             background-color: #f1f1f1;
             padding: 20px;
             margin: 10px;
-            display: flex; /* Create a flex container for two columns */
         }
 
-        .secondary-container {
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image-box {
+            width: 30%; /* Adjust the width as needed */
             background-color: #fff;
             padding: 10px;
-            margin: 10px;
             text-align: center;
-            flex: 1; /* Make each container take up equal width */
-        }
-
-        .video-games {
-            background-color: #bb2929;
-        }
-
-        .multiplayer-games {
-            background-color: #2516ab;
-        }
-
-        .board-games {
-            background-color: #277734;
         }
     </style>
 </head>
 <body>
     <div class="main-container video-games">
         <h1 id="video-games-header">Video Games We Play</h1>
-        <div class="secondary-container">
-            <img src="images/SM.jpg" alt="Spider-Man PS5" title="Spider-Man PS5">
-        </div>
-        <div class="secondary-container">
-            <strong>Marvel's Spider-Man</strong> returns for an exciting new adventure on the PS5. In Marvel’s Spider-Man Remastered, we meet an experienced Peter Parker who’s more masterful at fighting big crime in New York City. At the same time, he’s struggling to balance his chaotic personal life and career while the fate of Marvel’s New York rests upon his shoulders.
-        </div>
-        <div class="secondary-container">
-            <img src="images/SM2.jpg" alt="Spider-Man 2 PS5" title="Spider-Man 2 PS5">
-        </div>
-        <div class="secondary-container">
-            <strong>Marvel's Spider-Man 2</strong> continues the story. Swing, jump, and utilize the new Web Wings to travel across Marvel’s New York, quickly switching between Peter Parker and Miles Morales to experience different stories and epic new powers, as the iconic villain Venom threatens to destroy their lives, their city, and the ones they love.
-        </div>
-        <div class="secondary-container">
-            <img src="images/Rdr2.jpg" alt="Red Dead Redemption 2" title="Red Dead Redemption 2">
-        </div>
-        <div class="secondary-container">
-            <strong>Red Dead Redemption 2</strong> is set in America, 1899. The end of the wild west era has begun as lawmen hunt down the last remaining outlaw gangs. Those who will not surrender or succumb are killed. After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal, and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.
-        </div>
-        <div class="secondary-container">
-            <img src="images/GOW.jpg" alt="God of War" title="God of War">
-        </div>
-        <div class="secondary-container">
-            <strong>God of War</strong> - Kratos is a father again. As mentor and protector to Atreus, a son determined to earn his respect, he is forced to deal with and control the rage that has long defined him while out in a very dangerous world with his son. His vengeance against the Gods of Olympus behind him, Kratos now lives in the realm of Norse deities and monsters. It’s in this harsh, unforgiving world that he must fight to survive and not only teach his son to do the same but also prevent him from repeating the Ghost of Sparta’s bloodstained mistakes.
-        </div>
-        <div class="secondary-container">
-            <img src="images/GOWR.jpg" alt="God of War: Ragnarok" title="God of War: Ragnarok">
-        </div>
-        <div class="secondary-container">
-            <strong>God of War: Ragnarok</strong> - From Santa Monica Studio comes the sequel to the critically acclaimed God of War (2018). Fimbulwinter is well underway. Kratos and Atreus must journey to each of the Nine Realms in search of answers as Asgardian forces prepare for a prophesied battle that will end the world. Along the way, they will explore stunning, mythical landscapes, and face fearsome enemies in the form of Norse gods and monsters. The threat of Ragnarök grows ever closer. Kratos and Atreus must choose between their own safety and the safety of the realms.
+        <div class="image-container">
+            <div class="image-box">
+                <img src="images/SM.jpg" alt="Spider-Man PS5" title="Spider-Man PS5">
+                <p>Marvel's Spider-Man returns for an exciting new adventure on the PS5. In Marvel’s Spider-Man Remastered, we meet an experienced Peter Parker who’s more masterful at fighting big crime in New York City.</p>
+            </div>
+            <div class="image-box">
+                <img src="images/SM2.jpg" alt="Spider-Man 2 PS5" title="Spider-Man 2 PS5">
+                <p>Marvel's Spider-Man 2 continues the story. Swing, jump, and utilize the new Web Wings to travel across Marvel’s New York, quickly switching between Peter Parker and Miles Morales to experience different stories and epic new powers.</p>
+            </div>
+            <div class="image-box">
+                <img src="images/Rdr2.jpg" alt="Red Dead Redemption 2" title="Red Dead Redemption 2">
+                <p>Red Dead Redemption 2 is set in America, 1899. The end of the wild west era has begun as lawmen hunt down the last remaining outlaw gangs. Those who will not surrender or succumb are killed. After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee.</p>
+            </div>
+            <div class="image-box">
+                <img src="images/GOW.jpg" alt="God of War" title="God of War">
+                <p>God of War - Kratos is a father again. As mentor and protector to Atreus, a son determined to earn his respect, he is forced to deal with and control the rage that has long defined him while out in a very dangerous world with his son.</p>
+            </div>
+            <div class="image-box">
+                <img src="images/GOWR.jpg" alt="God of War: Ragnarok" title="God of War: Ragnarok">
+                <p>God of War: Ragnarok - From Santa Monica Studio comes the sequel to the critically acclaimed God of War (2018). Fimbulwinter is well underway. Kratos and Atreus must journey to each of the Nine Realms in search of answers as Asgardian forces prepare for a prophesied battle that will end the world.</p>
+            </div>
         </div>
     </div>
 
     <div class="main-container multiplayer-games">
         <h1 id="multiplayer-games-header">Multiplayer Games We Enjoy</h1>
-        <div class="secondary-container">
-            <img src="images/DBD.jpg" alt="Dead by Daylight" title="Dead by Daylight">
-        </div>
-        <div class="secondary-container">
-            <strong>Dead by Daylight</strong> - Ever wished to play as one of the characters from your favorite horror movies? Dead by Daylight is a 1v4 multiplayer game that draws from all corners of the horror world, from a powerful slasher to a terrifying paranormal entity. Choose between playing an unstoppable Killer and one of 4 Survivors trying to evade a gruesome death. Each character has their own deep progression system and plenty of unlockables that can be customized to fit your personal strategy. Work together to escape, or stalk and sacrifice every Survivor.
-        </div>
-        <div class="secondary-container">
-            <img src="images/TCM.jpg" alt="The Texas Chainsaw Massacre" title="The Texas Chainsaw Massacre">
-        </div>
-        <div class="secondary-container">
-            <strong>The Texas Chainsaw Massacre</strong> - Take on the role of one of the notorious Slaughter family, or their victims, in The Texas Chain Saw Massacre, a third-person asymmetrical horror experience based on the groundbreaking and iconic 1974 horror film. As a victim, you must use your wits and stealth to stay out of the Family's reach and find the tools you need to lead to your eventual freedom. Slaughter Family players must seek out, track down, and stop their guests from escaping. Players of The Texas Chain Saw Massacre can finally find out if they have what it takes to survive.
-        </div>
-        <div class="secondary-container">
-            <img src="images/DRG.jpg" alt="Deep Rock Galactic" title="Deep Rock Galactic">
-        </div>
-        <div class="secondary-container">
-            <strong>Deep Rock Galactic</strong> - Deep Rock Galactic is a 1-4 player co-op FPS featuring badass space Dwarves, procedurally-generated caves, 100% destructible environments, and endless hordes of alien monsters. Hoxxes IV has the highest concentration of valuable minerals ever discovered; however, everything on the planet from the creatures to the fauna is extremely hostile. Good thing Deep Rock Galactic employs the best space miners in the universe: Dwarves! Combining two things Dwarves love most - mining and killing monsters - Hoxxes is the perfect job for any proud, space-faring Dwarf. Work together as a team to dig, explore, and fight your way through a massive cave system filled with hordes of deadly enemies and valuable resources. You will need to rely on your teammates if you want to survive the most hostile cave systems in the galaxy.
+        <div class="image-container">
+            <div class="image-box">
+                <img src="images/DBD.jpg" alt="Dead by Daylight" title="Dead by Daylight">
+                <p>Dead by Daylight - Ever wished to play as one of the characters from your favorite horror movies? Dead by Daylight is a 1v4 multiplayer game that draws from all corners of the horror world, from a powerful slasher to a terrifying paranormal entity. Choose between playing an unstoppable Killer and one of 4 Survivors trying to evade a gruesome death. Each character has their own deep progression system and plenty of unlockables that can be customized to fit your personal strategy. Work together to escape, or stalk and sacrifice every Survivor.</p>
+            </div>
+            <div class="image-box">
+                <img src="images/TCM.jpg" alt="The Texas Chainsaw Massacre" title="The Texas Chainsaw Massacre">
+                <p>The Texas Chainsaw Massacre - Take on the role of one of the notorious Slaughter family, or their victims, in The Texas Chain Saw Massacre, a third-person asymmetrical horror experience based on the groundbreaking and iconic 1974 horror film. As a victim, you must use your wits and stealth to stay out of the Family's reach and find the tools you need to lead to your eventual freedom. Slaughter Family players must seek out, track down, and stop their guests from escaping. Players of The Texas Chain Saw Massacre can finally find out if they have what it takes to survive.</p>
+            </div>
+            <div class="image-box">
+                <img src="images/DRG.jpg" alt="Deep Rock Galactic" title="Deep Rock Galactic">
+                <p>Deep Rock Galactic - Deep Rock Galactic is a 1-4 player co-op FPS featuring badass space Dwarves, procedurally-generated caves, 100% destructible environments, and endless hordes of alien monsters. Hoxxes IV has the highest concentration of valuable minerals ever discovered; however, everything on the planet from the creatures to the fauna is extremely hostile. Good thing Deep Rock Galactic employs the best space miners in the universe: Dwarves! Combining two things Dwarves love most - mining and killing monsters - Hoxxes is the perfect job for any proud, space-faring Dwarf. Work together as a team to dig, explore, and fight your way through a massive cave system filled with hordes of deadly enemies and valuable resources. You will need to rely on your teammates if you want to survive the most hostile cave systems in the galaxy!</p>
+            </div>
         </div>
     </div>
 
     <div class="main-container board-games">
         <h1 id="board-games-header">Board Games We Love</h1>
-        <div class="secondary-container">
-            <img src="images/DiceThrone.jpg" alt="Dice Throne" title="Dice Throne">
-        </div>
-        <div class="secondary-container">
-            <strong>Dice Throne</strong> - A heart-pumping, fast-playing game of skilled card play and dice manipulation. The game is played over a series of rounds where you will be rolling your hero's dice up to 3 times. You will use the combination of dice symbols or numbers to activate your hero's abilities to attack your opponent(s).
-        </div>
-        <div class="secondary-container">
-            <img src="images/BTWD.jpg" alt="BANG!: The Walking Dead" title="BANG!: The Walking Dead">
-        </div>
-        <div class "secondary-container">
-            <strong>BANG!: The Walking Dead</strong> - BANG!: The Walking Dead is a shoot 'em up card game based on BANG! in which factions from The Walking Dead face off in a battle to survive. Each player becomes a famous Walking Dead character while taking on the roles of Leader, Savior, Survivor, or Loner.
-        </div>
-        <div class="secondary-container">
-            <img src="images/UWE.jpg" alt="Ultimate Werewolf Extreme" title="Ultimate Werewolf Extreme">
-        </div>
-        <div class="secondary-container">
-            <strong>Ultimate Werewolf Extreme</strong> - In Ultimate Werewolf Extreme, 3-25 players will use their wits to deceive and uncover deception by fellow players as they attempt to discover who among them is a werewolf. Like traditional werewolf games, Ultimate Werewolf Extreme has all sorts of roles and a moderator to run the game.
-        </div>
-        <div class="secondary-container">
-            <img src="images/MTG.jpg" alt="Magic: The Gathering" title="Magic: The Gathering">
-        </div>
-        <div class="secondary-container">
-            <strong>Magic: The Gathering</strong> - In the Magic game, you play the role of a planeswalker—a powerful wizard who fights other planeswalkers for glory, knowledge, and conquest. Your deck of cards represents all the weapons in your arsenal. It contains the spells you know and the creatures you can summon to fight for you.
+        <div class="image-container">
+            <div class="image-box">
+                <img src="images/DiceThrone.jpg" alt="Dice Throne" title="Dice Throne">
+                <p>Dice Throne - A heart-pumping, fast-playing game of skilled card play and dice manipulation. The game is played over a series of rounds where you will be rolling your hero's dice up to 3 times. You will use the combination of dice symbols or numbers to activate your hero's abilities to attack your opponent(s).</p>
+            </div>
+            <div class "image-box">
+                <img src="images/BTWD.jpg" alt="BANG!: The Walking Dead" title="BANG!: The Walking Dead">
+                <p>BANG!: The Walking Dead - BANG!: The Walking Dead is a shoot 'em up card game based on BANG! in which factions from The Walking Dead face off in a battle to survive. Each player becomes a famous Walking Dead character while taking on the roles of Leader, Savior, Survivor, or Loner.</p>
+            </div>
+            <div class="image-box">
+                <img src="images/UWE.jpg" alt="Ultimate Werewolf Extreme" title="Ultimate Werewolf Extreme">
+                <p>Ultimate Werewolf Extreme - In Ultimate Werewolf Extreme, 3-25 players will use their wits to deceive and uncover deception by fellow players as they attempt to discover who among them is a werewolf. Like traditional werewolf games, Ultimate Werewolf Extreme has all sorts of roles and a moderator to run the game.</p>
+            </div>
+            <div class="image-box">
+                <img src="images/MTG.jpg" alt="Magic: The Gathering" title="Magic: The Gathering">
+                <p>Magic: The Gathering - In the Magic game, you play the role of a planeswalker—a powerful wizard who fights other planeswalkers for glory, knowledge, and conquest. Your deck of cards represents all the weapons in your arsenal. It contains the spells you know and the creatures you can summon to fight for you.</p>
+            </div>
         </div>
     </div>
 </body>
