@@ -17,7 +17,7 @@
         }
 
         header {
-            background-image: url('hey.jpeg');
+            background-image: url('skyrim.jpeg');
             background-size: cover;
             color: #fff;
             text-align: center;
@@ -37,17 +37,33 @@
             border-radius: 5px;
             background-color: #444;
             transition: background-color 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
         }
 
         nav a:hover {
             background-color: #666;
         }
 
+        nav a img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        nav a:hover img {
+            opacity: 1;
+        }
+
         section {
             background-image: url('skyrim.jpeg');
             background-size: cover;
             padding: 2em;
-            text-align: justify;
+            text-align: center;
         }
 
         h1 {
@@ -83,11 +99,26 @@
     </header>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Explore</a>
-        <a href="#">Dragons</a>
-        <a href="#">Mods</a>
-        <a href="#">Contact</a>
+        <a href="#">
+            Gameplay
+            <img src="gameplay.jpeg" alt="Gameplay">
+        </a>
+        <a href="#">
+            Map
+            <img src="map.jpeg" alt="Map">
+        </a>
+        <a href="#">
+            Dragons
+            <img src="dragon.jpeg" alt="Dragons">
+        </a>
+        <a href="#">
+            Magic
+            <img src="magic.jpeg" alt="Magic">
+        </a>
+        <a href="#">
+            NPCs
+            <img src="hey.jpeg" alt="NPCs">
+        </a>
     </nav>
 
     <section>
