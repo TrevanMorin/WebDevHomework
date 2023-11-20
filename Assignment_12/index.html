@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px; /* Updated margin */
+            margin: 20px;
             padding: 0;
         }
 
@@ -129,15 +129,10 @@
     <nav>
         <a href="#">Home</a>
         <div class="dropdown">
-            <button>Rules</button>
-            <div class="dropdown-content">
-                <a href="#rules">Rules</a>
-                <a href="#setup">Setup</a>
-            </div>
-        </div>
-        <div class="button-dropdown">
             <button>How to Play</button>
-            <div class="button-dropdown-content">
+            <div class="dropdown-content">
+                <a href="#setup">Setup</a>
+                <a href="#rules">Rules</a>
                 <a href="#scoring">Scoring</a>
                 <a href="#defense">Defense</a>
             </div>
@@ -156,6 +151,20 @@
         </div>
         <div class="image-box">
             <img src="Drinks.jpeg" alt="Drinks Image" width="100%" height="100%">
+        </div>
+    </section>
+
+    <section>
+        <h3>Setup</h3>
+        <div class="text-box" id="setup">
+            <p>Place two poles 30 feet apart. Use PVC pipes cut to around 5-5.5 feet tall. Hammer them into the ground.</p>
+        </div>
+    </section>
+
+    <section>
+        <h3>Rules</h3>
+        <div class="text-box" id="rules">
+            <p>Teams can have one or two players. Place a beer bottle on top of each pole. Players take alternating turns.</p>
         </div>
     </section>
 
