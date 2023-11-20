@@ -37,20 +37,6 @@
             color: black;
         }
 
-        section {
-            padding: 20px;
-        }
-
-        .box {
-            width: 200px;
-            height: 200px;
-            background-color: lightblue;
-            border: 2px solid #333;
-            margin: 10px;
-            padding: 10px;
-            display: inline-block;
-        }
-
         .dropdown {
             position: relative;
             display: inline-block;
@@ -77,6 +63,31 @@
             border: 2px solid #333;
             margin: 10px;
             padding: 10px;
+            text-align: justify;
+        }
+
+        .button-dropdown {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .button-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .button-dropdown:hover .button-dropdown-content {
+            display: block;
+        }
+
+        .image-box {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            display: inline-block;
         }
     </style>
 </head>
@@ -97,23 +108,35 @@
                 <a href="#">Scoring</a>
             </div>
         </div>
+        <div class="button-dropdown">
+            <button>How to Play</button>
+            <div class="button-dropdown-content">
+                <a href="#setup">Setup</a>
+                <a href="#rules">Rules</a>
+                <a href="#defense">Defense</a>
+                <a href="#scoring">Scoring</a>
+            </div>
+        </div>
     </nav>
 
     <section>
         <h2>Welcome to the Beersbee Guide!</h2>
         <p>Learn how to play Beersbee, a fun and social outdoor game.</p>
 
-        <div class="box">Box 1</div>
-        <div class="box">Box 2</div>
-        <div class="box">Box 3</div>
-
-        <h3>Game Overview</h3>
-        <p>Beersbee, also known as Polish Horseshoes, is a backyard game played with frisbees, PVC poles, and beer bottles.</p>
+        <div class="image-box">
+            <img src="Beersbee.jpeg" alt="Beersbee Image" width="100%" height="100%">
+        </div>
+        <div class="image-box">
+            <img src="Frisbee.jpeg" alt="Frisbee Image" width="100%" height="100%">
+        </div>
+        <div class="image-box">
+            <img src="Drinks.jpeg" alt="Drinks Image" width="100%" height="100%">
+        </div>
     </section>
 
     <section>
         <h3>Setup</h3>
-        <div class="text-box">
+        <div class="text-box" id="setup">
             <p>Set up the Beersbee game with these simple steps:</p>
             <ul>
                 <li>Place two PVC poles 30 feet apart.</li>
@@ -126,7 +149,7 @@
 
     <section>
         <h3>Rules</h3>
-        <div class="text-box">
+        <div class="text-box" id="rules">
             <p>Play the game with the following rules:</p>
             <ul>
                 <li>Teams can have one or two players.</li>
@@ -142,14 +165,14 @@
 
     <section>
         <h3>Scoring</h3>
-        <div class="text-box">
+        <div class="text-box" id="scoring">
             <p>Score points by hitting your opponent's pole or target. Score three points if you knock the bottle to the ground and it breaks.</p>
         </div>
     </section>
 
     <section>
         <h3>Defense</h3>
-        <div class="text-box">
+        <div class="text-box" id="defense">
             <p>Players must remain behind the poles at all times. Your hand can't move in front of the pole. Hold a beverage in your hand at all times.</p>
         </div>
     </section>
