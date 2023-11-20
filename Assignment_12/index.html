@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
             padding: 0;
         }
 
@@ -16,9 +16,6 @@
             color: white;
             text-align: center;
             padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
         nav {
@@ -46,15 +43,6 @@
             margin-right: 20px;
         }
 
-        .dropdown button {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 14px 16px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
         .dropdown-content {
             display: none;
             position: absolute;
@@ -68,17 +56,6 @@
             display: block;
         }
 
-        .dropdown-content a {
-            display: block;
-            padding: 10px 16px;
-            text-decoration: none;
-            color: #333;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
         .text-box {
             width: 300px;
             height: 200px;
@@ -86,14 +63,23 @@
             border: 2px solid #333;
             margin: 10px;
             padding: 10px;
-            text-align: justify;
         }
 
-        .image-box {
-            width: 200px;
-            height: 200px;
-            margin: 10px;
+        .button-dropdown {
             display: inline-block;
+            margin-right: 20px;
+        }
+
+        .button-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .button-dropdown:hover .button-dropdown-content {
+            display: block;
         }
     </style>
 </head>
@@ -101,37 +87,34 @@
 
     <header>
         <h1>Beersbee Guide</h1>
-        <nav>
-            <a href="#">Home</a>
-            <div class="dropdown">
-                <button>How to Play</button>
-                <div class="dropdown-content">
-                    <a href="#setup">Setup</a>
-                    <a href="#rules">Rules</a>
-                    <a href="#scoring">Scoring</a>
-                    <a href="#defense">Defense</a>
-                </div>
-            </div>
-        </nav>
     </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Rules</a>
+        <a href="#">Setup</a>
+        <div class="dropdown">
+            <button>More</button>
+            <div class="dropdown-content">
+                <a href="#">Equipment</a>
+                <a href="#">Scoring</a>
+            </div>
+        </div>
+        <div class="button-dropdown">
+            <button>How to Play</button>
+            <div class="button-dropdown-content">
+                <a href="#setup">Setup</a>
+                <a href="#rules">Rules</a>
+                <a href="#defense">Defense</a>
+                <a href="#scoring">Scoring</a>
+            </div>
+        </div>
+    </nav>
 
     <section>
         <h2>Welcome to the Beersbee Guide!</h2>
         <p>Learn how to play Beersbee, a fun and social outdoor game.</p>
 
-        <div class="image-box">
-            <img src="images/Beersbee.jpg" alt="Beersbee Image" width="100%" height="100%">
-        </div>
-        <div class="image-box">
-            <img src="images/Frisbee.jpg" alt="Frisbee Image" width="100%" height="100%">
-        </div>
-        <div class="image-box">
-            <img src="images/Drinks.jpg" alt="Drinks Image" width="100%" height="100%">
-        </div>
-    </section>
-
-    <section>
-        <h3>Setup</h3>
         <div class="text-box" id="setup">
             <p>Set up the Beersbee game with these simple steps:</p>
             <ul>
@@ -162,28 +145,20 @@
     <section>
         <h3>Scoring</h3>
         <div class="text-box" id="scoring">
-            <p>Score points in the Beersbee game:</p>
-            <ul>
-                <li>Hit your opponent's pole or target.</li>
-                <li>Score three points if you knock the bottle to the ground and it breaks.</li>
-            </ul>
+            <p>Score points by hitting your opponent's pole or target. Score three points if you knock the bottle to the ground and it breaks.</p>
         </div>
     </section>
 
     <section>
         <h3>Defense</h3>
         <div class="text-box" id="defense">
-            <p>Defend your position with these rules:</p>
-            <ul>
-                <li>Players must remain behind the poles at all times.</li>
-                <li>Your hand can't move in front of the pole.</li>
-                <li>Hold a beverage in your hand at all times.</li>
-            </ul>
+            <p>Players must remain behind the poles at all times. Your hand can't move in front of the pole. Hold a beverage in your hand at all times.</p>
         </div>
     </section>
 
 </body>
 </html>
+
 
 
 
