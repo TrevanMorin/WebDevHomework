@@ -16,6 +16,9 @@
             color: white;
             text-align: center;
             padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         nav {
@@ -37,15 +40,13 @@
             color: black;
         }
 
-        .dropdown,
-        .button-dropdown {
+        .dropdown {
             position: relative;
             display: inline-block;
             margin-right: 20px;
         }
 
-        .dropdown button,
-        .button-dropdown button {
+        .dropdown button {
             background-color: #333;
             color: white;
             border: none;
@@ -54,8 +55,7 @@
             cursor: pointer;
         }
 
-        .dropdown-content,
-        .button-dropdown-content {
+        .dropdown-content {
             display: none;
             position: absolute;
             background-color: #f9f9f9;
@@ -64,21 +64,18 @@
             z-index: 1;
         }
 
-        .dropdown:hover .dropdown-content,
-        .button-dropdown:hover .button-dropdown-content {
+        .dropdown:hover .dropdown-content {
             display: block;
         }
 
-        .dropdown-content a,
-        .button-dropdown-content a {
+        .dropdown-content a {
             display: block;
             padding: 10px 16px;
             text-decoration: none;
             color: #333;
         }
 
-        .dropdown-content a:hover,
-        .button-dropdown-content a:hover {
+        .dropdown-content a:hover {
             background-color: #ddd;
         }
 
@@ -104,29 +101,19 @@
 
     <header>
         <h1>Beersbee Guide</h1>
+        <nav>
+            <a href="#">Home</a>
+            <div class="dropdown">
+                <button>How to Play</button>
+                <div class="dropdown-content">
+                    <a href="#setup">Setup</a>
+                    <a href="#rules">Rules</a>
+                    <a href="#scoring">Scoring</a>
+                    <a href="#defense">Defense</a>
+                </div>
+            </div>
+        </nav>
     </header>
-
-    <nav>
-        <a href="#">Home</a>
-        <div class="dropdown">
-            <button>How to Play</button>
-            <div class="dropdown-content">
-                <a href="#setup">Setup</a>
-                <a href="#rules">Rules</a>
-                <a href="#scoring">Scoring</a>
-                <a href="#defense">Defense</a>
-            </div>
-        </div>
-        <div class="button-dropdown">
-            <button>How to Play</button>
-            <div class="button-dropdown-content">
-                <a href="#setup">Setup</a>
-                <a href="#rules">Rules</a>
-                <a href="#defense">Defense</a>
-                <a href="#scoring">Scoring</a>
-            </div>
-        </div>
-    </nav>
 
     <section>
         <h2>Welcome to the Beersbee Guide!</h2>
@@ -197,6 +184,8 @@
 
 </body>
 </html>
+
+
 
 
 
