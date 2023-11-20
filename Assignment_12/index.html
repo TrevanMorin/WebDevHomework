@@ -16,6 +16,9 @@
             color: white;
             text-align: center;
             padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         nav {
@@ -86,32 +89,6 @@
             text-align: justify;
         }
 
-        .button-dropdown {
-            display: inline-block;
-            margin-right: 20px;
-        }
-
-        .button-dropdown button {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 14px 16px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .button-dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .button-dropdown:hover .button-dropdown-content {
-            display: block;
-        }
-
         .image-box {
             width: 200px;
             height: 200px;
@@ -124,20 +101,19 @@
 
     <header>
         <h1>Beersbee Guide</h1>
-    </header>
-
-    <nav>
-        <a href="#">Home</a>
-        <div class="dropdown">
-            <button>How to Play</button>
-            <div class="dropdown-content">
-                <a href="#setup">Setup</a>
-                <a href="#rules">Rules</a>
-                <a href="#scoring">Scoring</a>
-                <a href="#defense">Defense</a>
+        <nav>
+            <a href="#">Home</a>
+            <div class="dropdown">
+                <button>How to Play</button>
+                <div class="dropdown-content">
+                    <a href="#setup">Setup</a>
+                    <a href="#rules">Rules</a>
+                    <a href="#scoring">Scoring</a>
+                    <a href="#defense">Defense</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <section>
         <h2>Welcome to the Beersbee Guide!</h2>
@@ -155,8 +131,8 @@
     </section>
 
     <section>
-        <h3 id="setup">Setup</h3>
-        <div class="text-box">
+        <h3>Setup</h3>
+        <div class="text-box" id="setup">
             <p>Set up the Beersbee game with these simple steps:</p>
             <ul>
                 <li>Place two PVC poles 30 feet apart.</li>
@@ -168,8 +144,8 @@
     </section>
 
     <section>
-        <h3 id="rules">Rules</h3>
-        <div class="text-box">
+        <h3>Rules</h3>
+        <div class="text-box" id="rules">
             <p>Play the game with the following rules:</p>
             <ul>
                 <li>Teams can have one or two players.</li>
@@ -184,8 +160,8 @@
     </section>
 
     <section>
-        <h3 id="scoring">Scoring</h3>
-        <div class="text-box">
+        <h3>Scoring</h3>
+        <div class="text-box" id="scoring">
             <p>Score points in the Beersbee game:</p>
             <ul>
                 <li>Hit your opponent's pole or target.</li>
@@ -195,8 +171,8 @@
     </section>
 
     <section>
-        <h3 id="defense">Defense</h3>
-        <div class="text-box">
+        <h3>Defense</h3>
+        <div class="text-box" id="defense">
             <p>Defend your position with these rules:</p>
             <ul>
                 <li>Players must remain behind the poles at all times.</li>
