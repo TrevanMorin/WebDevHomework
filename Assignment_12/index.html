@@ -55,6 +55,12 @@
             cursor: pointer;
         }
 
+        /* Add this style to make the drop-down content appear below the button */
+        .dropdown:hover .dropdown-content {
+            display: block;
+            position: absolute;
+        }
+
         .dropdown-content {
             display: none;
             position: absolute;
@@ -62,10 +68,6 @@
             min-width: 160px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             z-index: 1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
         }
 
         .dropdown-content a {
@@ -103,6 +105,7 @@
         <h1>Beersbee Guide</h1>
         <nav>
             <a href="#">Home</a>
+            <!-- Modified "How to Play" dropdown -->
             <div class="dropdown">
                 <button>How to Play</button>
                 <div class="dropdown-content">
