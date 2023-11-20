@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 20px; /* Updated margin */
             padding: 0;
         }
 
@@ -16,9 +16,6 @@
             color: white;
             text-align: center;
             padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
         nav {
@@ -40,28 +37,17 @@
             color: black;
         }
 
-        .menu-item, .dropdown {
+        .dropdown {
+            position: relative;
             display: inline-block;
             margin-right: 20px;
         }
 
-        .menu-item a {
-            background-color: #26272b;
-            color: #fff;
-            text-align: center;
-            padding: 0.5em 1em;
-            text-decoration: none;
-        }
-
-        .menu-item:hover {
-            background-color: #1CCDCA;
-        }
-
         .dropdown button {
-            background-color: black;
+            background-color: #333;
             color: white;
             border: none;
-            padding: 0.5em 1em;
+            padding: 14px 16px;
             font-size: 16px;
             cursor: pointer;
         }
@@ -69,7 +55,8 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #fff;
+            background-color: #f9f9f9;
+            min-width: 160px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             z-index: 1;
         }
@@ -98,92 +85,76 @@
             padding: 10px;
             text-align: justify;
         }
+
+        .image-container {
+            text-align: center; /* Center the images */
+        }
+
+        .image-box {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .image-box img {
+            width: 100%; /* Make the images fill the container */
+            height: 100%; /* Maintain aspect ratio */
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Beersbee Guide</h1>
-        <nav>
-            <div class="menu-item">
-                <a href="#">Home</a>
-            </div>
-            <div class="dropdown">
-                <button>How to Play</button>
-                <div class="dropdown-content">
-                    <a href="#setup">Setup</a>
-                    <a href="#rules">Rules</a>
-                    <a href="#scoring">Scoring</a>
-                    <a href="#defense">Defense</a>
-                </div>
-            </div>
-        </nav>
     </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <div class="dropdown">
+            <button>Rules</button>
+            <div class="dropdown-content">
+                <a href="#rules">Rules</a>
+                <a href="#setup">Setup</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button>How to Play</button>
+            <div class="dropdown-content">
+                <a href="#scoring">Scoring</a>
+                <a href="#defense">Defense</a>
+            </div>
+        </div>
+    </nav>
 
     <section>
         <h2>Welcome to the Beersbee Guide!</h2>
         <p>Learn how to play Beersbee, a fun and social outdoor game.</p>
 
-        <div class="image-box">
-            <img src="images/Beersbee.jpg" alt="Beersbee Image" width="100%" height="100%">
-        </div>
-        <div class="image-box">
-            <img src="images/Frisbee.jpg" alt="Frisbee Image" width="100%" height="100%">
-        </div>
-        <div class="image-box">
-            <img src="images/Drinks.jpg" alt="Drinks Image" width="100%" height="100%">
-        </div>
-    </section>
-
-    <section>
-        <h3>Setup</h3>
-        <div class="text-box" id="setup">
-            <p>Set up the Beersbee game with these simple steps:</p>
-            <ul>
-                <li>Place two PVC poles 30 feet apart.</li>
-                <li>Cut PVC pipes to use as poles and hammer them into the ground until around 5-5.5 feet tall.</li>
-                <li>Use 2 strong plastic frisbees.</li>
-                <li>Place a beer bottle on top of each pole.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h3>Rules</h3>
-        <div class="text-box" id="rules">
-            <p>Play the game with the following rules:</p>
-            <ul>
-                <li>Teams can have one or two players.</li>
-                <li>Players take alternating turns.</li>
-                <li>Both players stand behind the same pole.</li>
-                <li>Players throw frisbees at the opponents' pole.</li>
-                <li>Score points by knocking down the opponent's bottle or making your opponent drop frisbees.</li>
-                <li>Scoring: Dropped frisbees - 1 point, Frisbee hits pole and bottle hits ground - 2 points, Direct hit on the bottle - 3 points.</li>
-                <li>First to 21 points wins.</li>
-            </ul>
+        <div class="image-container">
+            <div class="image-box">
+                <img src="Beersbee.jpeg" alt="Beersbee Image">
+            </div>
+            <div class="image-box">
+                <img src="Frisbee.jpeg" alt="Frisbee Image">
+            </div>
+            <div class="image-box">
+                <img src="Drinks.jpeg" alt="Drinks Image">
+            </div>
         </div>
     </section>
 
     <section>
         <h3>Scoring</h3>
         <div class="text-box" id="scoring">
-            <p>Score points in the Beersbee game:</p>
-            <ul>
-                <li>Hit your opponent's pole or target.</li>
-                <li>Score three points if you knock the bottle to the ground and it breaks.</li>
-            </ul>
+            <p>Score points by hitting your opponent's pole or target. Score three points if you knock the bottle to the ground and it breaks.</p>
         </div>
     </section>
 
     <section>
         <h3>Defense</h3>
         <div class="text-box" id="defense">
-            <p>Defend your position with these rules:</p>
-            <ul>
-                <li>Players must remain behind the poles at all times.</li>
-                <li>Your hand can't move in front of the pole.</li>
-                <li>Hold a beverage in your hand at all times.</li>
-            </ul>
+            <p>Players must remain behind the poles at all times. Your hand can't move in front of the pole. Hold a beverage in your hand at all times.</p>
         </div>
     </section>
 
