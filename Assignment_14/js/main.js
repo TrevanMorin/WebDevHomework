@@ -4,7 +4,7 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
-// Draw a comic book-style border around an image
+// Draw a comic book-style border around the canvas
 function drawComicBorder() {
     // Clear the canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
