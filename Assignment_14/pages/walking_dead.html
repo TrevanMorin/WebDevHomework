@@ -1,6 +1,6 @@
-<!-- pages/walking_dead.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -15,16 +16,22 @@
         </div>
     </nav>
 
-    <div class="container mt-4 text-center">
-        <h1 class="display-3">The Walking Dead</h1>
-        <img src="../images/walking_dead_cover.jpg" alt="The Walking Dead Cover" class="img-fluid">
-        <p class="lead">
-            "The Walking Dead" is a groundbreaking comic series by Robert Kirkman, Tony Moore, and Charlie Adlard. It delves into a post-apocalyptic world overrun by zombies, focusing on the survival of a group of diverse characters. The success of the comic led to the creation of a massively popular TV series with the same name. The show has achieved widespread acclaim, drawing a massive global following over its multiple seasons. Additionally, "The Walking Dead" expanded into video games, giving fans interactive experiences in the same universe.
-        </p>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../images/walking_dead_cover.jpg" alt="The Walking Dead Cover" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <canvas id="myCanvas" height="600" width="500"></canvas>
+                <p class="lead">
+                    Explore the phenomenon of "The Walking Dead" and its journey from comic book series to a cultural phenomenon. Analyze its impact on the zombie genre and how it paved the way for successful TV adaptations.
+                </p>
+            </div>
+        </div>
     </div>
 
     <script src="../js/main.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
 
+</html>
