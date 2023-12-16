@@ -1,41 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comic Book Universe</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Comic Book Universe</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/walking_dead.html">The Walking Dead</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/invincible.html">Invincible</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/watchmen.html">Watchmen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/the_boys.html">The Boys</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/marvel_dc.html">Marvel & DC</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/why_comics_are_great.html">Why Comics Are Great</a>
                     </li>
                 </ul>
             </div>
@@ -44,12 +29,11 @@
 
     <div class="container mt-4">
         <h2>Welcome to the Comic Book Universe!</h2>
-        <!-- Content for the home page -->
+        <canvas id="comicsCanvas" height="600" width="800"></canvas>
     </div>
 
-    <canvas id="myCanvas" height="600" width="500"></canvas>
     <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
 
+</html>
