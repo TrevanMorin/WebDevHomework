@@ -23,7 +23,7 @@ function drawComicBorder() {
     ctx.fillRect(5, canvas.height - 25, 20, 20);
     ctx.fillRect(canvas.width - 25, canvas.height - 25, 20, 20);
 }
- 
+
 // Redraw the comic border when the window is resized
 window.addEventListener("resize", function () {
     canvas.width = window.innerWidth;
@@ -33,3 +33,4 @@ window.addEventListener("resize", function () {
 
 // Initial draw
 drawComicBorder();
+
