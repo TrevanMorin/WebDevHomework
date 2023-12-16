@@ -4,46 +4,29 @@
 var canvas = document.getElementById("comicsCanvas");
 var ctx = canvas.getContext("2d");
 
-// Function to draw a comic book-style border with a question mark in the center
-function drawComicBorder(x, y) {
-    // Outer border
-    ctx.strokeStyle = "black";
-    ctx.lineWidth = 10;
-    ctx.strokeRect(x, y, 160, 220);
+// Draw comic book-style borders
+function drawComicBorders() {
+    // Clear the canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Inner border
-    ctx.strokeStyle = "black";
-    ctx.lineWidth = 5;
-    ctx.strokeRect(x + 10, y + 10, 140, 200);
+    // Draw comic book borders
+    for (let i = 0; i < 5; i++) {
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 10;
+        ctx.strokeRect(10 + i * 180, 10, 160, 220);
 
-    // Red line around the border
-    ctx.strokeStyle = "red";
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.moveTo(x, y);
-    ctx.lineTo(x + 160, y);
-    ctx.lineTo(x + 160, y + 220);
-    ctx.lineTo(x, y + 220);
-    ctx.closePath();
-    ctx.stroke();
-
-    // Dots on the corners
-    ctx.fillStyle = "black";
-    ctx.fillRect(x, y, 20, 20);
-    ctx.fillRect(x + 140, y, 20, 20);
-    ctx.fillRect(x, y + 200, 20, 20);
-    ctx.fillRect(x + 140, y + 200, 20, 20);
-
-    // Question mark in the center
-    ctx.font = '40pt Arial';
-    ctx.fillStyle = 'black';
-    ctx.fillText('?', x + 80, y + 120);
+        ctx.fillStyle = "black";
+        ctx.font = "40px Comic Sans MS";
+        ctx.fillText("?", 75 + i * 180, 130);
+    }
 }
 
-// Draw five comic book borders
-drawComicBorder(10, 10);
-drawComicBorder(180, 10);
-drawComicBorder(350, 10);
-drawComicBorder(520, 10);
-drawComicBorder(690, 10);
+// Redraw the comic borders when the window is resized
+window.addEventListener("resize", function () {
+    canvas.width = window.innerWidth;
+    canvas.height = 240;
+    drawComicBorders();
+});
 
+// Initial draw
+drawComicBorders();
