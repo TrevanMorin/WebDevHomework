@@ -6,6 +6,9 @@ var ctx = canvas.getContext("2d");
 
 // Draw a comic book-style border
 function drawComicBorder() {
+    // Clear the canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
     // Outer border
     ctx.strokeStyle = "black";
     ctx.lineWidth = 10;
@@ -15,6 +18,17 @@ function drawComicBorder() {
     ctx.strokeStyle = "black";
     ctx.lineWidth = 5;
     ctx.strokeRect(15, 15, canvas.width - 30, canvas.height - 30);
+
+    // Red line around the border
+    ctx.strokeStyle = "red";
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(5, 5);
+    ctx.lineTo(canvas.width - 5, 5);
+    ctx.lineTo(canvas.width - 5, canvas.height - 5);
+    ctx.lineTo(5, canvas.height - 5);
+    ctx.closePath();
+    ctx.stroke();
 
     // Dots on the corners
     ctx.fillStyle = "black";
