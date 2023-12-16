@@ -37,7 +37,7 @@ function drawComicBorder(x, y) {
     // Question mark in the center
     ctx.font = '40pt Arial';
     ctx.fillStyle = 'black';
-    ctx.fillText('?', x + 70, y + 120);
+    ctx.fillText('?', x + 80, y + 120);
 }
 
 // Draw five comic book borders
@@ -46,3 +46,4 @@ drawComicBorder(180, 10);
 drawComicBorder(350, 10);
 drawComicBorder(520, 10);
 drawComicBorder(690, 10);
+
