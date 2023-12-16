@@ -1,24 +1,35 @@
-// js/main.js
+// main.js
 
-// Add your JavaScript code for canvas interactions, animations, etc.
+// Get the canvas element
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
 
-// Example: Simple comic book panel effect using HTML5 canvas
-document.addEventListener('DOMContentLoaded', function () {
-    const canvas = document.getElementById('comicPanel');
-    if (canvas) {
-        const ctx = canvas.getContext('2d');
+// Draw a comic book-style border
+function drawComicBorder() {
+    // Outer border
+    ctx.strokeStyle = "black";
+    ctx.lineWidth = 10;
+    ctx.strokeRect(5, 5, canvas.width - 10, canvas.height - 10);
 
-        // Draw a simple border around the canvas
-        ctx.strokeStyle = 'black';
-        ctx.strokeRect(0, 0, canvas.width, canvas.height);
+    // Inner border
+    ctx.strokeStyle = "black";
+    ctx.lineWidth = 5;
+    ctx.strokeRect(15, 15, canvas.width - 30, canvas.height - 30);
 
-        // Example: Draw a speech bubble
-        ctx.beginPath();
-        ctx.moveTo(50, 50);
-        ctx.lineTo(100, 0);
-        ctx.lineTo(150, 50);
-        ctx.stroke();
-        ctx.font = '14px Arial';
-        ctx.fillText('Hello, comic world!', 55, 25);
-    }
+    // Dots on the corners
+    ctx.fillStyle = "black";
+    ctx.fillRect(5, 5, 20, 20);
+    ctx.fillRect(canvas.width - 25, 5, 20, 20);
+    ctx.fillRect(5, canvas.height - 25, 20, 20);
+    ctx.fillRect(canvas.width - 25, canvas.height - 25, 20, 20);
+}
+ 
+// Redraw the comic border when the window is resized
+window.addEventListener("resize", function () {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    drawComicBorder();
 });
+
+// Initial draw
+drawComicBorder();
